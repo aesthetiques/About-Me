@@ -1,3 +1,10 @@
 body {
-  background-color: #131313;
+  background-color: #202020;
+}
+* {
+  font-family: sans-serif;
+  color: #858585;
+}
+h5, strong{
+
 }
