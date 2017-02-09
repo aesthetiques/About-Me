@@ -14,7 +14,7 @@ body {
 
 /*can't figure out how to get the document.prints() to float to the right in css.*/
 h5, h4{
-  vertical-align: top;
+  vertical-align: top right;
   border: solid #999999;
   border-width: 2px;
   margin-left: 70%;
