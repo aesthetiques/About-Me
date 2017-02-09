@@ -14,12 +14,12 @@ console.log(quizResponseOne);
 
 if(quizResponseOne === 'Y' || quizResponseOne === 'YES' ){
   console.log('You\'re correct!');
-  document.write('<h2>Please answer with Y or N. Does Caleb have a dog?</h2>');
-  document.write('<h4> You said:</h4> ' + quizResponseOne + '<h4> You\'re correct!</h4>');
+  document.write('<h4>Please answer with Y or N. Does Caleb have a dog?</h4>');
+  document.write(' You said: ' + quizResponseOne + '. <strong>You\'re correct!</strong>');
 } else if(quizResponseOne === 'N' || quizResponseOne === 'NO'){
   console.log('You\'re incorrect, try again');
-  document.write('<h2>Please answer with Y or N. Does Caleb have a dog?</h2>');
-  document.write('<h4> You said:</h4> ' + quizResponseTwo + '<h4> You\'re INcorrect!</h4>');
+  document.write('<h4>Please answer with Y or N. Does Caleb have a dog?</h4>');
+  document.write(' You said: ' + quizResponseTwo + '. <strong>You\'re INcorrect!</strong>');
 } else{
   alert('That\'s not an answer, reload and try again.');
 }
@@ -28,12 +28,12 @@ var quizResponseTwo = prompt('You know the drill. Does Caleb have any tattoos?')
 
 if(quizResponseTwo === 'Y' || quizResponseTwo === 'YES'){
   console.log('You\'re correct!');
-  document.write('<h2>You know the drill. Does Caleb have tattoos?</h2>');
-  document.write('<h4>You\'re correct!</h4>');
+  document.write('<h4>You know the drill. Does Caleb have tattoos?</h4>');
+  document.write(' You said: ' + quizResponseTwo + '. <strong>You\'re correct!</strong>');
 } else if(quizResponseTwo === 'N' || quizResponseTwo === 'NO'){
   console.log('You\'re incorrect, try again');
-  document.write('<h2>You know the drill. Does Caleb have tattoos?</h2>');
-  document.write('<h4> You said:</h4> ' + quizResponseTwo + '<h4> You\'re INcorrect!</h4>');
+  document.write('<h4>You know the drill. Does Caleb have tattoos?</h4>');
+  document.write(' You said: ' + quizResponseTwo + '. <strong>You\'re INcorrect!</strong>');
 } else{
   alert('That\'s not an answer, reload and try again.');
 }
@@ -42,40 +42,40 @@ var quizResponseThree = prompt('Does Caleb have cats? Y or N.').toUpperCase();
 
 if(quizResponseThree === 'Y' || quizResponseThree === 'YES'){
   console.log('You\'re correct!');
-  document.write('<h2>Does Caleb have cats? Y or N.</h2>');
-  document.write('<h4>You\'re correct!</h4>');
+  document.write('<h4>Does Caleb have cats? Y or N.</h4>');
+  document.write(' You said: ' + quizResponseThree + '. <strong>You\'re correct!</strong>');
 } else if(quizResponseThree === 'N' || quizResponseThree === 'NO'){
   console.log('You\'re incorrect, try again');
-  document.write('<h2>Does Caleb have cats? Y or N.</h2>');
-  document.write('<h4> You said:</h4> ' + quizResponseThree + '<h4> You\'re INcorrect!</h4>');
+  document.write('<h4>Does Caleb have cats? Y or N.</h4>');
+  document.write(' You said: ' + quizResponseThree + '. <strong>You\'re INcorrect!</strong>');
 } else{
   alert('That\'s not an answer, reload and try again.');
 }
 
-var quizResponseFour = prompt('Question 4').toUpperCase();
+var quizResponseFour = prompt('Is Caleb\'s PC better than yours?').toUpperCase();
 
 if(quizResponseFour === 'Y' || quizResponseFour === 'YES'){
   console.log('You\'re correct!');
-  document.write('<h2>You know the drill. Does Caleb have tattoos?</h2>');
-  document.write('<h4>You\'re correct!</h4>');
+  document.write('<h4>Is Caleb\'s PC better than yours?</h4>');
+  document.write(' You said: ' + quizResponseFour + '. <strong>You\'re correct!</strong>');
 } else if(quizResponseFour === 'N' || quizResponseFour === 'NO'){
   console.log('You\'re incorrect, try again');
-  document.write('<h2>You know the drill. Does Caleb have tattoos?</h2>');
-  document.write('<h4> You said:</h4> ' + quizResponseFour + '<h4> You\'re INcorrect!</h4>');
+  document.write('<h4>Is Caleb\'s PC better than yours?</h4>');
+  document.write(' You said: ' + quizResponseFour + '. <strong>You\'re INcorrect!</strong>');
 } else{
   alert('That\'s not an answer, reload and try again.');
 }
 
-var quizResponseTwo = prompt('Question 5').toUpperCase();
+var quizResponseFive = prompt('Would Caleb ever use an iPhone?').toUpperCase();
 
-if(quizResponseTwo === 'Y' || quizResponseTwo === 'YES'){
+if(quizResponseFive === 'Y' || quizResponseFive === 'YES'){
   console.log('You\'re correct!');
-  document.write('<h2>You know the drill. Does Caleb have tattoos?</h2>');
-  document.write('<h4>You\'re correct!</h4>');
-} else if(quizResponseTwo === 'N' || quizResponseTwo === 'NO'){
+  document.write('<h4>Would Caleb ever use an iPhone?</h4>');
+  document.write('You said: ' + quizResponseFive + '. <strong>You\'re correct!</strong>');
+} else if(quizResponseFive === 'N' || quizResponseFive === 'NO'){
   console.log('You\'re incorrect, try again');
-  document.write('<h2>You know the drill. Does Caleb have tattoos?</h2>');
-  document.write('<h4> You said:</h4> ' + quizResponseTwo + '<h4> You\'re INcorrect!</h4>');
+  document.write('<h4>Would Caleb ever use an iPhone?</h4>');
+  document.write('You said: ' + quizResponseFive + '. <strong>You\'re INcorrect!</strong>');
 } else{
   alert('That\'s not an answer, reload and try again.');
 }
