@@ -6,10 +6,14 @@ body {
   color: #858585;
 }
 header{
+  text-align: center;
+  font-size: 40px;
+  color: #090909;
   background-color: #D4AF37;
   height: 100px;
   width: 100%;
   border-bottom-width: solid medium 4px;
+  border-radius: 0px 0px 10px 10px;
 }
 #page {
   vertical-align: middle;
@@ -25,3 +29,8 @@ h5, h4{
   margin-left: 70%;
   z-index: -1
 }
+
+/*aside{
+  font-family: monospace;
+  font-size: 14px;
+}*/
