@@ -3,11 +3,12 @@ var confirmQuiz = confirm('Hello, would you like to play a game?');
 
 if(confirmQuiz === true){
   console.log('Good... Welcome to the Monkey House.. What would you like to be called?');
-  document.write('Good... Welcome to the Monkey House.. What would you like to be called?');
+// can't figure out how to get the document.print() to float to the right on the page in ccs.
+  document.write('<h4 class="javascript">Good... Welcome to the Monkey House.. What would you like to be called?</h4>');
   var name = prompt('Good... Welcome to the Monkey House.. What would you like to be called?');
 } else {
   console.log('Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?');
-  document.write('Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?');
+  document.write('<h4 class="javascript">Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?</h4>');
   var name = prompt('Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?');
 }
 

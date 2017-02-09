@@ -6,9 +6,17 @@ body {
   color: #858585;
 }
 
-/*h5, h4{
-  text-align: right;
+#page {
+  vertical-align: middle;
+  margin-right: 40%;
+  z-index: 1;
+}
+
+/*can't figure out how to get the document.prints() to float to the right in css.*/
+h5, h4{
+  vertical-align: top;
   border: solid #999999;
-  border-left-width: 2px 2px 0px 2px;
+  border-width: 2px;
   margin-left: 70%;
-}*/
+  z-index: -1
+}
