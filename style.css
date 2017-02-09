@@ -5,14 +5,19 @@ body {
   font-family: sans-serif;
   color: #858585;
 }
-
+header{
+  background-color: #D4AF37;
+  height: 100px;
+  width: 100%;
+  border-bottom-width: solid medium 4px;
+}
 #page {
   vertical-align: middle;
   margin-right: 40%;
   z-index: 1;
 }
 
-/*can't figure out how to get the document.prints() to float to the right in css.*/
+/*can't figure out how to get the document.prints() to float to the right in css. considered changing all h5 and h4 to aside, and then to change font in css settings. been playing for too long.*/
 h5, h4{
   vertical-align: top right;
   border: solid #999999;
