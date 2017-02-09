@@ -3,9 +3,11 @@ var confirmQuiz = confirm('Hello, would you like to play a game?');
 
 if(confirmQuiz === true){
   console.log('Good... Welcome to the Monkey House.. What would you like to be called?');
+  document.write('Good... Welcome to the Monkey House.. What would you like to be called?');
   var name = prompt('Good... Welcome to the Monkey House.. What would you like to be called?');
 } else {
   console.log('Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?');
+  document.write('Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?');
   var name = prompt('Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?');
 }
 
