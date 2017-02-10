@@ -2,7 +2,7 @@ body {
   background-color: #202020;
 }
 * {
-  font-family: sans-serif;
+  font-family: 'Cormorant Infant', serif;
   color: #858585;
 }
 header{
@@ -29,8 +29,7 @@ td ul{
 
 h5, h4, h3{
   margin: 10px 20px;
-  border: solid #999999;
-  border-width: 1.5px;
+  border-bottom: solid 1.5px #999999;  
   z-index: -1;
 }
 
