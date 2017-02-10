@@ -16,20 +16,34 @@ header{
   border-radius: 0px 0px 10px 10px;
 }
 
-td ul{
-  text-align: left;
-}
-
-.fml{
+.fml {
   margin-left: 60%;
   float:right;
   text-align: left;
   border-left: solid #999;
 }
 
+ol {
+  list-style-type: lower-roman;
+}
+ul, li, ol {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.book-list {
+  display: none;
+  border-top: 1px solid #efefef;
+}
+.hidden {
+  display: none;
+}
+.active {
+  color: #F77;
+
 h5, h4, h3{
   margin: 10px 20px;
-  border-bottom: solid 1.5px #999999;  
+  border-bottom: solid 1.5px #999999;
   z-index: -1;
 }
 
