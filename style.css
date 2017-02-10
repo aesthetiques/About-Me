@@ -15,20 +15,35 @@ header{
   border-bottom-width: solid medium 4px;
   border-radius: 0px 0px 10px 10px;
 }
-#page {
-  vertical-align: middle;
-  margin-right: 40%;
-  z-index: 1;
+
+td ul{
+  text-align: left;
+}
+
+.fml{
+  margin-left: 60%;
+  float:right;
+  text-align: left;
+  border-left: solid #999;
+}
+
+h5, h4, h3{
+  margin: 10px 20px;
+  border: solid #999999;
+  border-width: 1.5px;
+  z-index: -1;
+}
+
+/*#user-story{
+  width:65%;
+}
+
+#content aside{
+  width: 30%;
 }
 
 /*can't figure out how to get the document.prints() to float to the right in css. considered changing all h5 and h4 to aside, and then to change font in css settings. been playing for too long.*/
-h5, h4{
-  vertical-align: top right;
-  border: solid #999999;
-  border-width: 2px;
-  margin-left: 70%;
-  z-index: -1
-}
+
 
 /*aside{
   font-family: monospace;
