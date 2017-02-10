@@ -8,7 +8,7 @@ body {
 
 #main-nav-bar{
     position: fixed;
-    
+
 }
 
 header{
@@ -23,21 +23,21 @@ header{
 }
 
 .author {
-    width: 65%;
+  font-size: 30px;
+}
+.book-list{
+  font-size: 25px;
 }
 
+/*
 #foo{
   float;
-}
+}*/
 
-
-
-h5, h4 {
-  margin-left: 30%;
-  margin: 10px 20px;
-  border-left: solid #999;
+/*h5, h4 {
+  margin: 10px 20px 10px 20px;
   border-bottom: solid 1.5px #999999;
-}
+}*/
 
 /*.fml {
   margin-left: 60%;
@@ -56,25 +56,61 @@ ul, li, ol {
   padding-top: 0;
 }
 
+
+#left-content{
+  border-right: solid #858585;
+  display: inline-block;
+  align: left;
+  min-height: 1000px;
+  width: 20%
+}
+
+#center-content{
+  display: inline-block;
+  align: center;
+  width: 55%;
+  min-height: 1000px;
+}
+
+#right-content{
+  border-left: solid #858585;
+  display: inline-block;
+  align: center;
+  min-height: 1000px;
+  width: 20%;
+}
+
 .book-list {
   display: none;
-  border-top: 1px solid #efefef;
+  border-top: 1px solid #EFEFEF;
 }
 .hidden {
   display: none;
 }
 .active {
-  color: #F77;
+  color: #FF7777;
+/* Drop Down Book Lists jQuery*/
+
+.book-list {
+  display: none;
+  border-top: 1px solid #EFEFEF;
+}
+.hidden {
+  display: none;
+}
+.active {
+  color: #FF7777;
+
 /*
 h5, h4, h3{
   margin: 10px 20px;
   border-bottom: solid 1.5px #999999;
   z-index: -1;
 }*/
-
+/*
 #content aside{
   width: 30%;
-}
+}*/
 
 /*can't figure out how to get the document.prints() to float to the right in css. considered changing all h5 and h4 to aside, and then to change font in css settings. been playing for too long.*/
 
