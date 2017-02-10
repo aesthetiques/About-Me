@@ -1,4 +1,9 @@
 'use strict';
+
+$('.slide-out').click(function(){
+  $(this).next('*').slideToggle();
+});
+
 var confirmQuiz = confirm('Hello, would you like to play a game?');
 // var quizResponse = prompt(
 //   ['&quot;Please answer with Y or N. Does Caleb have a dog?<&quot;/h4>'],
@@ -120,11 +125,6 @@ for(var i = 0; i < 6; i++){
     }
   }
 }
-
-$('.slide-out').on('click', function(){
-  $(this).next('*').slideToggle();
-});
-
   // if(quizResponseSix === 'N' || quizResponseSix === 'No'){
   //   console.log('You\'re correct!');
   //   document.write('&quot;Would Caleb ever use an iPhone?&quot;');
