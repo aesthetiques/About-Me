@@ -17,14 +17,31 @@ header{
   border-radius: 0px 0px 10px 10px;
 }
 
-.fml {
+.author {
+    width: 65%;
+}
+
+#foo{
+  float;
+}
+
+
+
+h5, h4, h3 {
+  margin-left: 30%;
+  margin: 10px 20px;
+  border-left: solid #999;
+  border-bottom: solid 1.5px #999999;
+}
+
+/*.fml {
   margin-left: 60%;
   float:right;
   text-align: left;
   border-left: solid #999;
   margin: 10px 20px;
   border-bottom: solid 1.5px #999999;
-}
+}*/
 
 ol {
   list-style-type: lower-roman;
@@ -43,16 +60,12 @@ ul, li, ol {
 }
 .active {
   color: #F77;
-
+/*
 h5, h4, h3{
   margin: 10px 20px;
   border-bottom: solid 1.5px #999999;
   z-index: -1;
-}
-
-/*#user-story{
-  width:65%;
-}
+}*/
 
 #content aside{
   width: 30%;
