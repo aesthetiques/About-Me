@@ -17,13 +17,32 @@ var quizQuestionFive = 'Would Caleb ever use an iPhone?';
 var quizQuestionSix = 'What\'s Caleb\'s favorite number? Between 1-10.';
 var quizQuestionSeven = 'How long does it take to saw through a leg?';
 
+// Checks user input given to ensure there's a valid response.
+function answerCheck(userInput){
+  if(userInput === 'Y' || userInput === 'YES'){
+    return 0;
+  }else if(userInput === 'N' || userInput === 'NO'){
+    return 1;
+  }else{
+    // Invalid answer.
+    return 2;
+  }
+}
+
+// function answerValidCheck(userInput){
+//   if(userInput !== '' && userInput !== 'null'){
+//     return true;
+//   }else{
+//     return false;
+//   }
+// }
+
 //Quiz Answers
 // var quizQuestion = prompt(
 //   ['&quot;Please answer with Y or N. Does Caleb have a dog?<&quot;/h4>'],
 //   ['']
 do {
   if(confirmQuiz === true){
-    console.log('Good... Welcome to the Monkey House.. What would you like to be called?');
   // can't figure out how to get the document.print() to float to the right on the page in ccs.
     var name = prompt('Good... Welcome to the Monkey House.. What would you like to be called?');
     console.log('<h3>&quot;Good... Welcome to the Monkey House.. What would you like to be called?&quot;</h3>');
@@ -34,10 +53,15 @@ do {
     quizConfirmed = true;
   } else{
     var name = prompt('Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?');
-    console.log('Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?');
-    console.log('<h5>My name is </h5>' + name + '<h5>.</h5>');
-    document.write('<h3>&quot;Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?&quot;</h3>');
-    document.write('<h5>My name is </h5>' + name + '<h5>.</h5>');
+
+    // Name checked for English letters only ( no numbers ).
+    if(name !== '' && name !== 'null'){
+      quizConfirmed = true;
+      console.log('Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?');
+      console.log('My name is ' + name + '.');
+      document.write('<h3>&quot;Ohohoho, its much too late to be shy.. Come into the Monkey House... What do we call you?&quot;</h3>');
+      document.write('<h5>My name is </h5>' + name + '<h5>.</h5>');
+    }
   }
 } while (!quizConfirmed);
 
@@ -46,7 +70,13 @@ do {
 
 //var quizQuestionOne = prompt('question here').toUpperCase();
 
+// Checks for valid input using the created function.
 var quizAnswerOne = prompt(quizQuestionOne).toUpperCase();
+while(answerCheck(quizAnswerOne) === 2){
+  quizAnswerOne = prompt(quizQuestionOne).toUpperCase();
+  console.log('Invalid answer.');
+}
+
 console.log(quizQuestionOne);
 if(quizAnswerOne === 'N' || quizAnswerOne === 'NO' ){
   console.log('You\'re correct!');
@@ -57,11 +87,13 @@ if(quizAnswerOne === 'N' || quizAnswerOne === 'NO' ){
   console.log('You\'re incorrect, try again');
   document.write('<h5>&quot;Please answer with Y or N. Does Caleb have a dog?&quot;</h5>');
   document.write('<h5>You said: ' + quizAnswerOne + '. <strong>&quot;You\'re incorrect, ' + name + '!&quot; </strong><em>The clown steps out of the shadows to your right, a chainsaw in hand.</em></h5>');
-} else{
-  alert('That\'s not an answer, reload and try again.');
 }
 
 var quizAnswerTwo = prompt(quizQuestionTwo).toUpperCase();
+while(answerCheck(quizAnswerTwo) === 2){
+  quizAnswerTwo = prompt(quizQuestionTwo).toUpperCase();
+  console.log('Invalid answer.');
+}
 if(quizAnswerTwo === 'Y' || quizAnswerTwo === 'YES'){
   console.log('You\'re correct!');
   document.write('<h5>&quot;You know the drill. Does Caleb have tattoos?&quot;&quot;</h5>');
@@ -71,11 +103,13 @@ if(quizAnswerTwo === 'Y' || quizAnswerTwo === 'YES'){
   console.log('You\'re incorrect, try again');
   document.write('<h5>&quot;You know the drill. Does Caleb have tattoos?&quot;</h5>');
   document.write('<h5>You said: ' + quizAnswerTwo + '. <strong>&quot;Incorrect again, ' + name + '!&quot; </strong><em> The clown starts the chainsaw, giggling quietly to himself.</em></h5>');
-} else{
-  alert('That\'s not an answer, reload and try again.');
 }
 
 var quizAnswerThree = prompt(quizQuestionThree).toUpperCase();
+while(answerCheck(quizAnswerThree) === 2){
+  quizAnswerThree = prompt(quizQuestionThree).toUpperCase();
+  console.log('Invalid answer.');
+}
 if(quizAnswerThree === 'Y' || quizAnswerThree === 'YES'){
   console.log('You\'re correct!');
   document.write('<h5>&quot;Does Caleb have a cat? Y or N.&quot;</h5>');
@@ -85,11 +119,13 @@ if(quizAnswerThree === 'Y' || quizAnswerThree === 'YES'){
   console.log('You\'re incorrect, try again');
   document.write('<h5>&quot;Does Caleb have cat? Y or N.&quot;</h5>');
   document.write('<h5>You said: ' + quizAnswerThree + '. <strong><em>The speaker laughs.</em> &quot;' + 'Wrong again, ' + name + '!' + '&quot; he says gleefully. ' + '</strong> You feel strong hands snatch you from behind and pin you to a wooden table behind you. You can\'t break the cuffs they shackle around your ankles.</em></h5>');
-} else{
-  alert('That\'s not an answer, reload and try again.');
 }
 
 var quizAnswerFour = prompt(quizQuestionFour).toUpperCase();
+while(answerCheck(quizAnswerFour) === 2){
+  quizAnswerFour = prompt(quizQuestionFour).toUpperCase();
+  console.log('Invalid answer.');
+}
 if(quizAnswerFour === 'Y' || quizAnswerFour === 'YES'){
   console.log('You\'re correct!');
   document.write('<h5>Is Caleb\'s PC better than yours?</h5>');
@@ -99,11 +135,13 @@ if(quizAnswerFour === 'Y' || quizAnswerFour === 'YES'){
   console.log('You\'re incorrect, try again');
   document.write('<h5>&quot;Is Caleb\'s PC better than yours?&quot;</h5>');
   document.write('<h5>You said: ' + quizAnswerFour + '. <strong>&quot;Wrong again...&quot; <em>Another of your hands is locked to the table. The other clown pull-starts his saw.</em></strong></h5>');
-} else{
-  alert('That\'s not an answer, reload and try again.');
 }
 
 var quizAnswerFive = prompt(quizQuestionFive).toUpperCase();
+while(answerCheck(quizAnswerFive) === 2){
+  quizAnswerFive = prompt(quizQuestionFive).toUpperCase();
+  console.log('Invalid answer.');
+}
 if(quizAnswerFive === 'N' || quizAnswerFive === 'No'){
   console.log('You\'re correct!');
   document.write('<h5>&quot;Would Caleb ever use an iPhone?&quot;</h5>');
@@ -117,8 +155,6 @@ if(quizAnswerFive === 'N' || quizAnswerFive === 'No'){
   console.log('<h5>You said: ' + quizAnswerFive + '. <strong>&quot;It\'s just not your night, is it, ' + name + '?&quot;</strong> <em>The final wrist is bound to the table, and all you can do is watch while the snickering clown saws though the table towards you.</em></h5>');
   document.write('<h5>&quot;Would Caleb ever use an iPhone?&quot;</h5>');
   document.write('<h5>You said: ' + quizAnswerFive + '. <strong>&quot;It\'s just not your night, is it, ' + name + '?&quot;</strong> <em>The final wrist is bound to the table, and all you can do is watch while the snickering clown saws though the table towards you.</em></h5>');
-} else{
-  alert('That\'s not an answer, reload and try again.');
 }
 
 for(var k = 0; k < 4; k++){
