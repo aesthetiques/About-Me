@@ -6,6 +6,11 @@ body {
   color: #858585;
 }
 
+#main-nav-bar{
+    position: fixed;
+    
+}
+
 header{
   text-align: center;
   font-size: 40px;
@@ -27,7 +32,7 @@ header{
 
 
 
-h5, h4, h3 {
+h5, h4 {
   margin-left: 30%;
   margin: 10px 20px;
   border-left: solid #999;
