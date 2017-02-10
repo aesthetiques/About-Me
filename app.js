@@ -4,6 +4,7 @@ $('.slide-out').click(function(){
   $(this).next('*').slideToggle();
 });
 
+var pointsTotal = 0;
 var confirmQuiz = confirm('Hello, would you like to play a game?');
 // var quizResponse = prompt(
 //   ['&quot;Please answer with Y or N. Does Caleb have a dog?<&quot;/h4>'],
@@ -29,6 +30,7 @@ if(quizResponseOne === 'N' || quizResponseOne === 'NO' ){
   console.log('You\'re correct!');
   document.write('<h5>&quot;Please answer with Y or N. Does Caleb have a dog?&quot;</h5>');
   document.write('<h5>You said: ' + quizResponseOne + '. <strong>&quot;You\'re correct, ' + name + '!&quot;</strong></h5>');
+  pointsTotal ++;
 } else if(quizResponseOne === 'Y' || quizResponseOne === 'YES'){
   console.log('You\'re incorrect, try again');
   document.write('<h5>&quot;Please answer with Y or N. Does Caleb have a dog?&quot;</h5>');
@@ -43,6 +45,7 @@ if(quizResponseTwo === 'Y' || quizResponseTwo === 'YES'){
   console.log('You\'re correct!');
   document.write('<h5>&quot;You know the drill. Does Caleb have tattoos?&quot;&quot;</h5>');
   document.write('<h5>&quot;You said: ' + quizResponseTwo + '. <strong>&quot;You\'re INcorrect, ' + name + '!&quot;</strong></h5>');
+  pointsTotal ++;
 } else if(quizResponseTwo === 'N' || quizResponseTwo === 'NO'){
   console.log('You\'re incorrect, try again');
   document.write('<h5>&quot;You know the drill. Does Caleb have tattoos?&quot;</h5>');
@@ -57,6 +60,7 @@ if(quizResponseThree === 'Y' || quizResponseThree === 'YES'){
   console.log('You\'re correct!');
   document.write('<h5>&quot;Does Caleb have a cat? Y or N.&quot;</h5>');
   document.write('<h5>You said: ' + quizResponseThree + '. <strong>&quot;You\'re correct, ' + name + '!</strong>&quot;</h5>');
+  pointsTotal ++;
 } else if(quizResponseThree === 'N' || quizResponseThree === 'NO'){
   console.log('You\'re incorrect, try again');
   document.write('<h5>&quot;Does Caleb have cat? Y or N.&quot;</h5>');
@@ -71,6 +75,7 @@ if(quizResponseFour === 'Y' || quizResponseFour === 'YES'){
   console.log('You\'re correct!');
   document.write('<h5>Is Caleb\'s PC better than yours?</h5>');
   document.write('<h5>You said: ' + quizResponseFour + '. <strong>&quot;You\'re correct, ' + name + '!&quot;</strong></h5>');
+  pointsTotal ++;
 } else if(quizResponseFour === 'N' || quizResponseFour === 'NO'){
   console.log('You\'re incorrect, try again');
   document.write('<h5>&quot;Is Caleb\'s PC better than yours?&quot;</h5>');
@@ -85,6 +90,7 @@ if(quizResponseFive === 'N' || quizResponseFive === 'No'){
   console.log('You\'re correct!');
   document.write('<h5>&quot;Would Caleb ever use an iPhone?&quot;</h5>');
   document.write('<h5>You said: ' + quizResponseFive + '. <strong>&quot;You\'re correct, ' + name + '!&quot;</strong></h5>');
+  pointsTotal ++;
 } else if(quizResponseFive === 'Y' || quizResponseFive === 'YES'){
   console.log('You\'re incorrect, try again');
   document.write('<h5>&quot;Would Caleb ever use an iPhone?&quot;</h5>');
@@ -101,6 +107,7 @@ for(var k = 0; k < 4; k++){
     k = 4;
     document.write('<h5>What\'s my favorite number?</h5>');
     document.write('<h5>You said: ' + quizResponseSix + '. That was correct..<em>this time.</em></h5>');
+    pointsTotal ++;
   }else{
     document.write('<h5>What\'s my favorite number?</h5>');
     document.write('<h5>You said: ' + quizResponseSix + '. Nope! ' + 'It was ' + quizResponseSixAnswer + '.. another digit we\'ll saw from your hand.</h5>');
@@ -116,6 +123,7 @@ for(var i = 0; i < 6; i++){
       i = 6;
       document.write('<h5>How long does it take to saw through a leg?</h5>');
       document.write('<h5>You said: ' + quizResponseSeven + '. That was correct..<em>Next question</em></h5>');
+      pointsTotal ++;
       break;
     }
     if(quizResponseSeven !== quizResponseSevenAnswer[0] ||
@@ -125,6 +133,7 @@ for(var i = 0; i < 6; i++){
     }
   }
 }
+document.write('<h5>You scored a total of ' + pointsTotal + ' out of 7.</h5>');
   // if(quizResponseSix === 'N' || quizResponseSix === 'No'){
   //   console.log('You\'re correct!');
   //   document.write('&quot;Would Caleb ever use an iPhone?&quot;');
