@@ -90,7 +90,7 @@ if(quizResponseFive === 'N' || quizResponseFive === 'No'){
 
 for(var k = 0; k < 4; k++){
   var quizResponseSix = parseInt(prompt('What\'s my favorite number? Between 1-10.'));
-  var quizResponseSixAnswer = 9;
+  var quizResponseSixAnswer = Math.floor(Math.random() * 10);
   // for(var l = 0; l <= 10; l++){ originally was making an unecessary for loop
   if(quizResponseSix === quizResponseSixAnswer){
     k = 4;
@@ -98,7 +98,7 @@ for(var k = 0; k < 4; k++){
     document.write('<h5>You said: ' + quizResponseSix + '. That was correct..<em>this time.</em></h5>');
   }else{
     document.write('<h5>What\'s my favorite number?</h5>');
-    document.write('<h5>You said: ' + quizResponseSix + '. That was WRONG..<em>this time.</em></h5>');
+    document.write('<h5>You said: ' + quizResponseSix + '. Nope! ' + 'It was ' + quizResponseSixAnswer + '.. another digit we\'ll saw from your hand.</h5>');
   }
 }
 
